@@ -1,5 +1,247 @@
-*{
+/* Default Values */
+:root{
+    --white : #fafafc;
+    --darkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturatedDarkBlue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+    --fontSize : 13px;
+}
+
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Manrope";
+    src: url(fonts/Manrope-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Manrope";
+    src: url(fonts/Manrope-Bold.ttf);
+    font-weight: 700;
+}
+
+/* body */
+body{
+    font-family:"Manrope";
+    font-size: var(--fontSize);
+    height: 100dvh;
+    width: 100dvw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    background: var(--lightGrayishBlue);
+}
+
+/* Maon Container */
+.container{
+    background:var(--white);
+    width: calc(100% - 50px);
+    max-width: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    transition:all 0.3s ease;
+}
+
+/* Article Image */
+.postImg{
+    aspect-ratio: 6/4;
+    overflow: hidden;
+    cursor: pointer;
+}
+.postImg img{
+    width: 100%;
+    transition: all .3s ease;
+}
+.postImg img:hover{
+  transform: scale(1.2);
+}
+
+/* Article Info */
+.postInfo{
+    padding:20px;
+    padding-bottom: 10px;
+}
+
+/* Post Title  */
+.postTitle{
+    font-size: 18px;
+    color: var(--darkGrayishBlue);
+    cursor: pointer;
+}
+
+/* Post Description */
+.postDesc{
+    line-height: 1.5;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    color: var(--desaturatedDarkBlue);
+}
+
+/* Author Info */
+.authorInfo{
+    background:inherit;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+    background: inherit;
+    height: 60px;
+}
+
+/* Author Img */
+.authorImg{
+    max-height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+/* Author Name */
+.authorName{
+  width: 100%;
+  margin:0 0 3px 0;
+  font-weight:700;
+  color: var(--darkGrayishBlue);
+}
+
+/* Publish Date */
+.publishDate{
+  color: var(--desaturatedDarkBlue);
+}
+
+/* Post Share */
+.shareBtn{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: var(--lightGrayishBlue);
+  height: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  z-index:3 ;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.shareBtn.active{
+  transform:translateY(-50%) rotate(90deg);
+  background: var(--desaturatedDarkBlue);
+}
+/* Share Iocn */
+.shareBtn svg{
+  fill:#6E8098;
+}
+.shareBtn.active svg{
+  fill: var(--white);
+}
+
+/* Share Menu */
+.shareMenu{
+  position: absolute;
+  background: var(--darkGrayishBlue);
+  bottom: -80px;
+  left:0;
+  z-index: 2;
+  height: 80px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  transition: all .3s ease-in-out;
+  opacity: 0;
+}
+.shareMenu.active{
+  bottom: 0;
+  opacity: 1;
+}
+
+.shareMenu .text{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--lightGrayishBlue);
+  margin: 0 4% 0 0;
+}
+.shareMenu .icon{
+  margin: 0 3%;
+  display: grid;
+  place-items: center;
+}
+
+
+/* Responaive Design */
+@media screen and (min-width:767px){
+  .container{
+    display: flex;
+    max-width: 700px;
+    overflow: visible;
+  }
+  
+  /* Post Image */
+  .postImg{
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+  }
+  .postImg img{
+    height: 100%;
+    width:100%;
+  }
+
+  /* Share Menu */
+  .shareMenu{
+    position: absolute;
+    right: 4%;
+    left: auto;
+    bottom: 10%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all .4s ease;
+    font-size: 12px;
+    opacity: 0;
+  }
+  .shareMenu::before{
+    height: 30px;
+    width: 30px;
+    content: '';
+    display: inline-block;
+    background: var(--darkGrayishBlue);
+    z-index:-1;
+    position: absolute;
+    top: 70%;
+    left: 83%;
+    transform: rotate(45deg) translateX(-50%);
+  }
+  .shareMenu .icon{
+    margin: 0 5%;
+  }
+  .shareMenu .icon img{
+    height: 16px;
+  }
+  .shareMenu.active{
+    box-sizing: border-box;
+    overflow: visible;
+    bottom: 30%;
+    right: 2%;
+    left: auto;
+    width: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    height: 50px;
+    padding: 0 50px 0 20px;
+    opacity: 1;
+  }
 }

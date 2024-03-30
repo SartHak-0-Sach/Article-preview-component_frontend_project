@@ -4,34 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Article preview component</title>
-
-  <link rel="stylesheet" href="style.css">
-
+  <title>Article Preview Component</title>
+  <!-- [ External CSS ] -->
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-
-  <div id="container">
-    <div id="left-image"></div>
-    <div id="right-content">
-      <div id="top-content">
-        <div id="title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</div>
-        <div id="date">12 hours ago</div>
-        <div id="share">Share</div>
+  <!-- [Main Container] -->
+  <main class="container">
+    <!-- [Artical Image] -->
+    <div class="postImg">
+      <img src="assets/images/drawers.jpg" alt="Post Image">
+    </div>
+    <!-- [Article Info] -->
+    <div class="postInfo">
+      <!-- [Post Title] -->
+      <h1 class="postTitle">Shift the overall look and feel by adding these wonderful touches to furniture in your home
+      </h1>
+      <!-- [Post Description] -->
+      <p class="postDesc">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and
+        uninviting. I've got some simple tips to help you make any room feel complete.</p>
+      <!-- [Author Info] -->
+      <div class="authorInfo">
+        <img src="assets/images/avatar-michelle.jpg" alt="Author Image" class="authorImg">
+        <div>
+          <p class="authorName">Michelle Appleton</p>
+          <span class="publishDate">28 Jun 2020</span>
+        </div>
+        <!-- [Post Share] -->
+        <div class="postShare">
+          <button class="shareBtn" type="button" title="share-button"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+              height="13">
+              <path
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+            </svg></button>
+        </div>
       </div>
-      <div id="bottom-content">
-        <div id="content">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</div>
-        <div id="author">Michelle Appleton</div>
-        <div id="share">Share</div>
-      </div>
-  </div>
+    </div>
+    <!--[ Share Menu ]-->
+    <div class="shareMenu">
+      <span class="text">Share</span>
+      <!-- [FaceBook Icon] -->
+      <a class="icon" href="#"><img src="assets/images/icon-facebook.svg" alt="FaceBook Icon"></a>
+      <!-- [Twitter Icon] -->
+      <a class="icon" href="#"><img src="assets/images/icon-twitter.svg" alt="Twitter Icon"></a>
+      <!-- [Pinterest Icon] -->
+      <a class="icon" href="#"><img src="assets/images/icon-pinterest.svg" alt="Pinterest Icon"></a>
+    </div>
+  </main>
 
-  <script src="script.js"></script>
-
+  <script src="assets/script.js"></script>
 </body>
 
 </html>
