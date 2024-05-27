@@ -84,7 +84,8 @@ These key points mentioned here will help me grow accountable and consistent tow
 
 ### Useful resources
 
-- [MDN documentation DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) - This helped me for writing the above code. I really liked this pattern and will use it going forward.
+- [Harkirat Singh course notes](https://github.com/SartHak-0-Sach/harkirat-singh-course_code_and_notes) - I have added notes of all lectures along with code and lecture insights of all weeks along with bonus lectures to help you all as much as I can.
+- [My development code and notes](https://github.com/SartHak-0-Sach/cwh-web-dev-playlist_code_and_notes) - These are my notes that I made while working on my development skills in initial days and did these courses. Make sure to star the repository if you like it.✨💫
 - [MDN documentation hover state for CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover) - This is an amazing article which helped me finally understand hover states. I'd recommend it to anyone still learning this concept.
 
 ## Author
