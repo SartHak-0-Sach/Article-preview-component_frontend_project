@@ -1,13 +1,12 @@
 # Article Preview Component
 
-![Design preview for the Article Preview Component coding challenge](./design/desktop-preview.jpg)
-
 ## Welcome! 👋
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [How to setup the project](#how-to-setup-the-project)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -29,56 +28,80 @@ Users should be able to:
 
 I have ensured a responsive layout to accommodate various screen sizes and incorporated JavaScript functionality to enable social media sharing upon clicking the share icon.
 
+### How to setup the project
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository using GitHub Desktop or Git Bash:
+   ```bash
+   git clone https://github.com/SartHak-0-Sach/Article-preview-component_frontend_project.git
+   ```
+2. Open the project folder in your code editor.
+3. Run the project using a live server extension or deploy it using Netlify, Vercel, or another web hosting and deployment service.
+
 ### Screenshot
 
-![](./screenshot.jpg)
+![Design preview for the Article Preview Component coding challenge](./design/desktop-active-state.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Link to this repo](https://github.com/SartHak-0-Sach/Article-preview-component_frontend_project)
+- Live Site URL: [Live site URL](https://article-preview-app.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- Vanilla JavaScript
+- DOM manipulation
 
 You will find all the required assets in the `/design` folder. The assets are already optimized.
 
+There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project is a very beginner friendly project that can help you understand and implement basic HTML and CSS syntax along with some core JavaScript concepts like DOM manipulation as shown below.
 
-(Examples of code snippets that I will add from my code)
+<b>js = proud of this function</b>
+
+```
+// Post Share 
+let shareBtn = document.querySelector(".shareBtn");
+shareBtn.addEventListener("click", () => {
+    shareBtn.classList.toggle("active");
+    document.querySelector(".shareMenu").classList.toggle("active")
+})
+```
 
 ### Continued development
 
-The Article Preview Component project has helped me refine my skills in responsive design and JavaScript event handling. In future projects, I aim to explore more advanced techniques for interactive components and user interfaces.
+The continuously learning journey of a programmer never ends. This project made me realize that there are many concepts that I need to work upon including fundamentals like flex-box and its properties, to more complex concepts like working with fetch and async await in javascript. These areas are some that I think I need to work more upon in the upcoming future as they highlight some of the most significant regions of web development that are important for every developer to know of. 
+
+These key points mentioned here will help me grow accountable and consistent towards improving at writing good quality code and be a successful full stack developer one day.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN documentation DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) - This helped me for writing the above code. I really liked this pattern and will use it going forward.
+- [MDN documentation hover state for CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover) - This is an amazing article which helped me finally understand hover states. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-portfolio-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+<b><strong>Sarthak Sachdev</strong></b>
+- Website - [Sarthak Sachdev](https://itsmesarthak.netlify.app/)
+- LeetCode - [@sarthak_sachdev](https://leetcode.com/u/sarthak_sachdev/)
+- Twitter - [@sarthak_sach69](https://www.twitter.com/sarthak_sach69)
 
 ## Acknowledgments
 
-I'd like to express gratitude to the developer community for their continuous support and valuable insights, which have contributed to my growth as a developer.
+I feel like the solutions provided on the website and the continuous doubt solving by industry experts on discord for free is something that is unmatched by anyone else and need to be acknowledged for their efforts in improving me as a developer by suggesting the best practices in your respective tech stack.
 
 ## Got feedback for me?
 
-I love receiving feedback! I am always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email 'hi' at saarsaach[at]gmail[dot]com.
+I love receiving feedback! I am always looking to improve my code and take up new innovative ideas to work upon. So if you have anything you'd like to mention, please email 'hi' at saarsaach30[at]gmail[dot]com.
 
-If you found this project helpful, consider sharing it with others to spread the knowledge!
+If you liked this project make sure to spread the word and share it with all your friends.
 
 **Happy coding!** ☺️🚀
