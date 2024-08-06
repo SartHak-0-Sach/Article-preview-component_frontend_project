@@ -178,6 +178,15 @@ body{
   place-items: center;
 }
 
+/* Footer */
+.attribution {
+    left: 50%;
+    font-size: 11px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 /* Responaive Design */
 @media screen and (min-width:767px){
@@ -244,14 +253,4 @@ body{
     padding: 0 50px 0 20px;
     opacity: 1;
   }
-}
-
-/* Footer */
-.attribution {
-    left: 50%;
-    font-size: 11px;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
